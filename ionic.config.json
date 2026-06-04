@@ -1,0 +1,7 @@
+{
+  "name": "app.ionic.loterias-caixa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
