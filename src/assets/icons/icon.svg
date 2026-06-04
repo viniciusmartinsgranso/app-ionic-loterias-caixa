@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Loterias">
+  <rect width="512" height="512" rx="112" fill="#3880ff"/>
+  <circle cx="166" cy="176" r="48" fill="#ffffff"/>
+  <circle cx="256" cy="176" r="48" fill="#ffffff"/>
+  <circle cx="346" cy="176" r="48" fill="#ffffff"/>
+  <circle cx="166" cy="284" r="48" fill="#ffffff"/>
+  <circle cx="256" cy="284" r="48" fill="#ffffff"/>
+  <circle cx="346" cy="284" r="48" fill="#ffffff"/>
+  <path fill="#ffffff" d="M144 376c0-22 18-40 40-40h144c22 0 40 18 40 40s-18 40-40 40H184c-22 0-40-18-40-40Z"/>
+</svg>
