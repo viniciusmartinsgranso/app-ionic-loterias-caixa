@@ -2,8 +2,14 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { apiRoutes } from "./apiRoutes";
+
 export const environment = {
-  production: false
+  production: false,
+  api: {
+    apiBaseUrl: 'https://loteriascaixa-api.herokuapp.com/api',
+    routes: apiRoutes
+  },
 };
 
 /*

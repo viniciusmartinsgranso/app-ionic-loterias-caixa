@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Loterias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Loterias</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item-group>
+    @for (loteria of loterias$ | async; track loteria) {
+      <ion-card>
+        <ion-card-header class="header" (click)="getLoteria(loteria)">
+          {{ translatedLoterias[loteria] }}
+        </ion-card-header>
+      </ion-card>
+    }
+  </ion-item-group>
+</ion-content>
