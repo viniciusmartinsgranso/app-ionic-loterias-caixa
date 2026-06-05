@@ -3,7 +3,7 @@ import { IonicModule } from "@ionic/angular";
 import { ActivatedRoute } from "@angular/router";
 import { LoteriasService } from "../../../services/loterias.service";
 import { finalize, take } from "rxjs";
-import { Concurso, MockLoteriasEnum } from "../../../types/types";
+import { Concurso, MockLoteriasEnum, translatedLoterias } from "../../../types/types";
 
 @Component({
   selector: 'app-concurso',
@@ -26,6 +26,8 @@ export class ConcursoComponent  implements OnInit {
   concursoId: string = '';
 
   isLoading = false;
+
+  translatedLoterias: Record<MockLoteriasEnum | string, string> = translatedLoterias;
 
   constructor() {
     this.loteria = this.route.snapshot.paramMap.get('loteria') as MockLoteriasEnum;

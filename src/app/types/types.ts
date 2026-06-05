@@ -11,7 +11,7 @@ export enum MockLoteriasEnum {
   SUPERSETE = "supersete",
 }
 
-export const translatedLoterias: Record<MockLoteriasEnum, string> = {
+export const translatedLoterias: Record<MockLoteriasEnum | string, string> = {
   [MockLoteriasEnum.MAISMILIONARIA]: 'Mais Milionária',
   [MockLoteriasEnum.MEGASENA]: 'Mega Sena',
   [MockLoteriasEnum.LOTOFACIL]: 'Loto Fácil',

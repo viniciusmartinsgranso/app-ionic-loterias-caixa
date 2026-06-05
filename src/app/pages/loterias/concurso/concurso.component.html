@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start" class="ion-padding">
-      <ion-back-button [mode]="'md'" [defaultHref]="'loterias/' + loteria" default-href="#" text="Voltar"></ion-back-button>
+      <ion-back-button [mode]="'md'" [defaultHref]="'loterias/' + loteria" default-href="#"
+                       text="Voltar"></ion-back-button>
     </ion-buttons>
 
     <ion-title>Resultados</ion-title>
@@ -21,10 +22,12 @@
 
   <ion-item-group>
     @if (concurso) {
-      <ion-chip>Próximo sorteio: {{ concurso.dataProximoConcurso }}</ion-chip>
+      <ion-item>Loteria: {{ translatedLoterias[concurso.loteria] }}</ion-item>
+      <ion-item>Concurso: {{ concurso.concurso }}</ion-item>
+      <ion-item>Dia do sorteio: {{ concurso.data }}</ion-item>
 
       @for (resultado of concurso.dezenas; track resultado) {
-        <ion-card>
+        <ion-card class="ion-margin-bottom">
           <ion-card-header class="header">
             {{ resultado }}
           </ion-card-header>
