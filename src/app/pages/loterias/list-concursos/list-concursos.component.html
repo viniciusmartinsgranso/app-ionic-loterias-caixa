@@ -23,11 +23,11 @@
     @for (concurso of concursos$ | async; track concurso.concurso;) {
       <ion-card class="ion-margin-bottom">
         <ion-card-header (click)="goToConcurso(concurso.concurso)">
-          <ion-card-title>
+          <ion-card-title class="header">
             {{ concurso.concurso }}
           </ion-card-title>
 
-          <ion-card-subtitle class="header">
+          <ion-card-subtitle class="data-concurso">
             {{ concurso.data }}
           </ion-card-subtitle>
         </ion-card-header>
