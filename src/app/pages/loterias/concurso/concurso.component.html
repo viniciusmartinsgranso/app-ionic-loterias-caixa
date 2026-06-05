@@ -1,7 +1,7 @@
 @if (concurso) {
   <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title>{{ translatedLoterias[concurso.loteria] }}</ion-title>
+      <ion-title style="text-align: center;">{{ translatedLoterias[concurso.loteria] }}</ion-title>
     </ion-toolbar>
   </ion-header>
 }
@@ -13,7 +13,7 @@
   @if (concurso) {
     <ion-header collapse="condense">
       <ion-toolbar>
-        <ion-title size="large"> {{ translatedLoterias[concurso.loteria] }}</ion-title>
+        <ion-title style="text-align: center;" size="large"> {{ translatedLoterias[concurso.loteria] }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -37,7 +37,7 @@
     </ion-item-group>
   }
 </ion-content>
-<ion-footer>
+<ion-footer [translucent]="false">
   <ion-buttons class="ion-padding" style="justify-content: end">
     <ion-back-button [mode]="'md'" [defaultHref]="'loterias/' + loteria" default-href="#"
                      text="Voltar"></ion-back-button>
