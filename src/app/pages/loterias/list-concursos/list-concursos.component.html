@@ -1,9 +1,5 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start" class="ion-padding">
-      <ion-back-button [mode]="'md'" default-href="loterias" text="Voltar"></ion-back-button>
-    </ion-buttons>
-
     <ion-title>{{ translatedLoterias[loteria] }}</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -35,3 +31,9 @@
     }
   </ion-item-group>
 </ion-content>
+
+<ion-footer>
+  <ion-buttons slot="start" class="ion-padding">
+    <ion-back-button [mode]="'md'" default-href="loterias" text="Voltar"></ion-back-button>
+  </ion-buttons>
+</ion-footer>
