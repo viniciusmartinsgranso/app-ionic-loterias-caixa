@@ -14,7 +14,7 @@
   <ion-item-group>
     @for (loteria of loterias$ | async; track loteria) {
       <ion-card>
-        <ion-card-header (click)="getLoteria(loteria)">
+        <ion-card-header class="header" (click)="getLoteria(loteria)">
           {{ translatedLoterias[loteria] }}
         </ion-card-header>
       </ion-card>
